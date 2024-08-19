@@ -1,0 +1,2 @@
+./traductor "I have two books and three apples."
+

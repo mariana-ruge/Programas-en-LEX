@@ -351,8 +351,8 @@ static void yynoreturn yy_fatal_error ( const char* msg  );
 	(yy_hold_char) = *yy_cp; \
 	*yy_cp = '\0'; \
 	(yy_c_buf_p) = yy_cp;
-#define YY_NUM_RULES 10
-#define YY_END_OF_BUFFER 11
+#define YY_NUM_RULES 21
+#define YY_END_OF_BUFFER 22
 /* This struct is not used in this scanner,
    but its presence is necessary. */
 struct yy_trans_info
@@ -360,10 +360,14 @@ struct yy_trans_info
 	flex_int32_t yy_verify;
 	flex_int32_t yy_nxt;
 	};
-static const flex_int16_t yy_accept[15] =
+static const flex_int16_t yy_accept[56] =
     {   0,
-        0,    0,   11,    9,    8,    7,    3,    1,    2,    4,
-        6,    5,    6,    0
+        0,    0,   22,   20,   19,   19,   20,   20,   20,   20,
+       20,   20,   20,   19,    0,    0,    0,    0,    0,    0,
+        0,    0,    0,    0,    0,   11,    5,    0,    7,    0,
+        0,    0,    0,    0,    1,   12,    6,    0,    8,    0,
+       14,    0,   17,    3,    2,   15,    9,   13,   18,    4,
+        0,   10,    0,   16,    0
     } ;
 
 static const YY_CHAR yy_ec[256] =
@@ -372,16 +376,16 @@ static const YY_CHAR yy_ec[256] =
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    2,    1,    1,    1,    1,    1,    1,    1,    1,
-        1,    4,    5,    1,    6,    1,    7,    8,    8,    8,
-        8,    8,    8,    8,    8,    8,    8,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
+        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
+        1,    1,    1,    1,    1,    1,    4,    5,    6,    7,
 
+        8,    1,    9,   10,   11,    1,   12,   13,   14,   15,
+       16,   17,    1,   18,   19,   20,   21,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
-        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
-        1,    1,    1,    9,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
         1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
@@ -398,35 +402,57 @@ static const YY_CHAR yy_ec[256] =
         1,    1,    1,    1,    1
     } ;
 
-static const YY_CHAR yy_meta[10] =
+static const YY_CHAR yy_meta[22] =
     {   0,
-        1,    1,    1,    1,    1,    1,    1,    1,    1
+        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
+        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
+        1
     } ;
 
-static const flex_int16_t yy_base[15] =
+static const flex_int16_t yy_base[56] =
     {   0,
-        0,    0,   12,   13,   13,   13,   13,   13,   13,   13,
-        3,   13,    2,   13
+        0,    0,   68,   69,   20,   22,   50,   50,   22,   49,
+       48,   17,   45,   27,   45,   45,   16,   49,   50,   37,
+       51,   35,   47,   41,   41,   33,   32,   37,   30,   29,
+       39,   27,   37,   36,   24,   69,   69,   35,   69,   33,
+       69,   32,   20,   19,   69,   19,   16,   69,   69,   69,
+       23,   69,   12,   69,   69
     } ;
 
-static const flex_int16_t yy_def[15] =
+static const flex_int16_t yy_def[56] =
     {   0,
-       14,    1,   14,   14,   14,   14,   14,   14,   14,   14,
-       14,   14,   14,    0
+       55,    1,   55,   55,   55,   55,   55,   55,   55,   55,
+       55,   55,   55,   55,   55,   55,   55,   55,   55,   55,
+       55,   55,   55,   55,   55,   55,   55,   55,   55,   55,
+       55,   55,   55,   55,   55,   55,   55,   55,   55,   55,
+       55,   55,   55,   55,   55,   55,   55,   55,   55,   55,
+       55,   55,   55,   55,    0
     } ;
 
-static const flex_int16_t yy_nxt[23] =
+static const flex_int16_t yy_nxt[91] =
     {   0,
-        4,    5,    6,    7,    8,    9,   10,   11,   12,   13,
-       13,   14,    3,   14,   14,   14,   14,   14,   14,   14,
-       14,   14
+        4,    5,    6,    7,    8,    9,   10,    4,    4,   11,
+        4,    4,    4,   12,    4,    4,    4,    4,    4,   13,
+        4,   14,   14,   14,   14,   17,   54,   21,   14,   14,
+       53,   18,   22,   26,   52,   27,   51,   50,   49,   48,
+       47,   46,   45,   44,   43,   42,   41,   40,   39,   38,
+       37,   36,   35,   34,   33,   32,   31,   30,   29,   28,
+       25,   24,   23,   20,   19,   16,   15,   55,    3,   55,
+       55,   55,   55,   55,   55,   55,   55,   55,   55,   55,
+       55,   55,   55,   55,   55,   55,   55,   55,   55,   55
     } ;
 
-static const flex_int16_t yy_chk[23] =
+static const flex_int16_t yy_chk[91] =
     {   0,
-        1,    1,    1,    1,    1,    1,    1,    1,    1,   13,
-       11,    3,   14,   14,   14,   14,   14,   14,   14,   14,
-       14,   14
+        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
+        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
+        1,    5,    5,    6,    6,    9,   53,   12,   14,   14,
+       51,    9,   12,   17,   47,   17,   46,   44,   43,   42,
+       40,   38,   35,   34,   33,   32,   31,   30,   29,   28,
+       27,   26,   25,   24,   23,   22,   21,   20,   19,   18,
+       16,   15,   13,   11,   10,    8,    7,    3,   55,   55,
+       55,   55,   55,   55,   55,   55,   55,   55,   55,   55,
+       55,   55,   55,   55,   55,   55,   55,   55,   55,   55
     } ;
 
 static yy_state_type yy_last_accepting_state;
@@ -443,23 +469,13 @@ int yy_flex_debug = 0;
 #define YY_MORE_ADJ 0
 #define YY_RESTORE_YY_MORE_OFFSET
 char *yytext;
-#line 1 "punto4.l"
-#line 2 "punto4.l"
- // Definición de los tipos de tokens utilizando una enumeración
- enum yytokentype {
-    NUMBER = 258,  // Token para números
-    ADD = 259,     // Token para suma (+)
-    SUB = 260,     // Token para resta (-)
-    MUL = 261,     // Token para multiplicación (*)
-    DIV = 262,     // Token para división (/)
-    ABS = 263,     // Token para valor absoluto (|)
-    EOL = 264      // Token para fin de línea End Of Line
- };
+#line 1 "punto2.l"
+#line 2 "punto2.l"
+#include <stdio.h>
 
- // Variable para almacenar el valor numérico de un token NUMBER
- int yylval;
-#line 462 "lex.yy.c"
-#line 463 "lex.yy.c"
+void translate(char *input);
+#line 478 "lex.yy.c"
+#line 479 "lex.yy.c"
 
 #define INITIAL 0
 
@@ -676,10 +692,9 @@ YY_DECL
 		}
 
 	{
-#line 17 "punto4.l"
+#line 7 "punto2.l"
 
-
-#line 683 "lex.yy.c"
+#line 698 "lex.yy.c"
 
 	while ( /*CONSTCOND*/1 )		/* loops until end-of-file is reached */
 		{
@@ -706,13 +721,13 @@ yy_match:
 			while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 				{
 				yy_current_state = (int) yy_def[yy_current_state];
-				if ( yy_current_state >= 15 )
+				if ( yy_current_state >= 56 )
 					yy_c = yy_meta[yy_c];
 				}
 			yy_current_state = yy_nxt[yy_base[yy_current_state] + yy_c];
 			++yy_cp;
 			}
-		while ( yy_base[yy_current_state] != 13 );
+		while ( yy_base[yy_current_state] != 69 );
 
 yy_find_action:
 		yy_act = yy_accept[yy_current_state];
@@ -738,62 +753,111 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 19 "punto4.l"
-{ return ADD; }         // Reconoce el operador '+' y retorna el token ADD
+#line 8 "punto2.l"
+{ printf("libro "); }
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 20 "punto4.l"
-{ return SUB; }         // Reconoce el operador '-' y retorna el token SUB
+#line 9 "punto2.l"
+{ printf("libros "); }
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 21 "punto4.l"
-{ return MUL; }         // Reconoce el operador '*' y retorna el token MUL
+#line 10 "punto2.l"
+{ printf("manzana "); }
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 22 "punto4.l"
-{ return DIV; }         // Reconoce el operador '/' y retorna el token DIV
+#line 11 "punto2.l"
+{ printf("manzanas "); }
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
-#line 23 "punto4.l"
-{ return ABS; }         // Reconoce el operador '|' y retorna el token ABS
+#line 12 "punto2.l"
+{ printf("gato "); }
 	YY_BREAK
 case 6:
 YY_RULE_SETUP
-#line 24 "punto4.l"
-{
-    yylval = atoi(yytext);  // Convierte la secuencia de dígitos en un número entero
-    return NUMBER;          // Retorna el token NUMBER
-}
+#line 13 "punto2.l"
+{ printf("gatos "); }
 	YY_BREAK
 case 7:
-/* rule 7 can match eol */
 YY_RULE_SETUP
-#line 28 "punto4.l"
-{ return EOL; }          // Reconoce el fin de línea y retorna el token EOL
+#line 14 "punto2.l"
+{ printf("perro "); }
 	YY_BREAK
 case 8:
 YY_RULE_SETUP
-#line 29 "punto4.l"
-{ /* Ignora espacios en blanco y tabulaciones */ }
+#line 15 "punto2.l"
+{ printf("perros "); }
 	YY_BREAK
 case 9:
 YY_RULE_SETUP
-#line 30 "punto4.l"
-{
-    printf("Carácter desconocido %c\n", *yytext);
-    return -1;              // Retorna -1 para indicar un carácter no reconocido
-}
+#line 16 "punto2.l"
+{ printf("casa "); }
 	YY_BREAK
 case 10:
 YY_RULE_SETUP
-#line 35 "punto4.l"
+#line 17 "punto2.l"
+{ printf("casas "); }
+	YY_BREAK
+case 11:
+YY_RULE_SETUP
+#line 18 "punto2.l"
+{ printf("coche "); }
+	YY_BREAK
+case 12:
+YY_RULE_SETUP
+#line 19 "punto2.l"
+{ printf("coches "); }
+	YY_BREAK
+case 13:
+YY_RULE_SETUP
+#line 20 "punto2.l"
+{ printf("ratón "); }
+	YY_BREAK
+case 14:
+YY_RULE_SETUP
+#line 21 "punto2.l"
+{ printf("ratones "); }
+	YY_BREAK
+case 15:
+YY_RULE_SETUP
+#line 22 "punto2.l"
+{ printf("niño "); }
+	YY_BREAK
+case 16:
+YY_RULE_SETUP
+#line 23 "punto2.l"
+{ printf("niños "); }
+	YY_BREAK
+case 17:
+YY_RULE_SETUP
+#line 24 "punto2.l"
+{ printf("árbol "); }
+	YY_BREAK
+case 18:
+YY_RULE_SETUP
+#line 25 "punto2.l"
+{ printf("árboles "); }
+	YY_BREAK
+case 19:
+/* rule 19 can match eol */
+YY_RULE_SETUP
+#line 27 "punto2.l"
+{ /* Ignorar espacios, tabs y saltos de línea */ }
+	YY_BREAK
+case 20:
+YY_RULE_SETUP
+#line 29 "punto2.l"
+{ printf("%s ", yytext); } /* Si no se reconoce la palabra, se deja como está */
+	YY_BREAK
+case 21:
+YY_RULE_SETUP
+#line 31 "punto2.l"
 ECHO;
 	YY_BREAK
-#line 797 "lex.yy.c"
+#line 861 "lex.yy.c"
 case YY_STATE_EOF(INITIAL):
 	yyterminate();
 
@@ -1090,7 +1154,7 @@ static int yy_get_next_buffer (void)
 		while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 			{
 			yy_current_state = (int) yy_def[yy_current_state];
-			if ( yy_current_state >= 15 )
+			if ( yy_current_state >= 56 )
 				yy_c = yy_meta[yy_c];
 			}
 		yy_current_state = yy_nxt[yy_base[yy_current_state] + yy_c];
@@ -1118,11 +1182,11 @@ static int yy_get_next_buffer (void)
 	while ( yy_chk[yy_base[yy_current_state] + yy_c] != yy_current_state )
 		{
 		yy_current_state = (int) yy_def[yy_current_state];
-		if ( yy_current_state >= 15 )
+		if ( yy_current_state >= 56 )
 			yy_c = yy_meta[yy_c];
 		}
 	yy_current_state = yy_nxt[yy_base[yy_current_state] + yy_c];
-	yy_is_jam = (yy_current_state == 14);
+	yy_is_jam = (yy_current_state == 55);
 
 		return yy_is_jam ? 0 : yy_current_state;
 }
@@ -1798,55 +1862,23 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 35 "punto4.l"
+#line 31 "punto2.l"
 
 
-int main(int argc, char **argv)
-{
-    // Si se proporciona un archivo como argumento, abrirlo
-    if(argc > 1) {
-        FILE *file = fopen(argv[1], "r");
-        if(!file) {
-            perror("No se puede abrir el archivo");
-            return 1;
+int main(int argc, char **argv) {
+    if (argc > 1) {
+        for (int i = 1; i < argc; i++) {
+            translate(argv[i]);
         }
-        yyin = file;  // Establece yyin para leer desde el archivo
+    } else {
+        yylex(); /* Analizar la entrada estándar */
     }
+    return 0;
+}
 
-    // Tok es la variable que almacena el token retornado
-    int tok;
-    while((tok = yylex())) {
-        if(tok == 0) break;  // Si yylex retorna 0, se ha terminado la entrada
-        switch(tok) {
-            case NUMBER:
-                printf("NUMBER = %d\n", yylval);
-                break;
-            case ADD:
-                printf("ADD\n");
-                break;
-            case SUB:
-                printf("SUB\n");
-                break;
-            case MUL:
-                printf("MUL\n");
-                break;
-            case DIV:
-                printf("DIV\n");
-                break;
-            case ABS:
-                printf("ABS\n");
-                break;
-            case EOL:
-                printf("EOL\n");
-                break;
-            case -1:
-                printf("Error: Carácter desconocido\n");
-                break;
-            default:
-                printf("Token desconocido: %d\n", tok);
-        }
-    }
-
-    return 0;  // Fin del programa
+void translate(char *input) {
+    YY_BUFFER_STATE bp = yy_scan_string(input);
+    yylex();
+    yy_delete_buffer(bp);
 }
 
