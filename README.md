@@ -22,7 +22,7 @@ Si no te muestra la version del compilador, por favor ejecuta en la terminal.
 ```
 Esto instalara el compilador de C en tu maquina.
 
-#####  2. Tener **Flex **(Es una herramienta de analizadores lexicos) instalado en tu maquina o entorno local.
+#####  2. Tener Flex (Es una herramienta de analizadores lexicos) instalado en tu maquina o entorno local.
 Para verificar si esta instalado, por favor ejecuta en la terminal.
 ```bash
 flex  --version
@@ -70,6 +70,8 @@ Dentro de la misma, estan  otras 5 carpetas cada una con el ejercicio que desarr
 - **Punto 3:** Reconocer símbolos y caracteres de la calculadora.
 - **Punto 4:** Reconocimiento de tokens.
 - **Punto 5:** Clasificación de números complejos.
+
+
 Puedes navegar a cada  carpeta de desarrollo  con:
 ```bash
 cd  'Punto *Numero del punto* '
