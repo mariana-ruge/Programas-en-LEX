@@ -66,7 +66,7 @@ cd 'Programas-en-LEX'
 ```
 Dentro de la misma, estan  otras 5 carpetas cada una con el ejercicio que desarrollan.
 - **Punto 1:** Contar líneas, palabras y caracteres.
-- **Punto 2:**T raductor de inglés a español.
+- **Punto 2:** Traductor de inglés a español.
 - **Punto 3:** Reconocer símbolos y caracteres de la calculadora.
 - **Punto 4:** Reconocimiento de tokens.
 - **Punto 5:** Clasificación de números complejos.
@@ -77,7 +77,9 @@ cd  'Punto *Numero del punto* '
 
 ##### 3. Ejecuta los ejercicios
 Una vez hayas seleccionado el ejercicio y te hayas ubicado en la carpeta correspondiente, debes compilar y ejecutarlo. Puedes hacerlo de la siguiente forma:
+
 **Para compilar**
+
 (Asegurate que el archivo a compilar este en la carpeta)
 
 Usa el siguiente comando en la terminal.
@@ -85,6 +87,8 @@ Usa el siguiente comando en la terminal.
 	gcc lex.yy.c -o  nombre del archivo  -lfl
 ```
 Una vez compilado, ya puedes ejecutar el archivo en la terminal, de la siguiente forma.
+
+
 **Para ejecutar**
 ```bash
 	./nombre del archivo
